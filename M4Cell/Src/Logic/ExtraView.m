@@ -9,11 +9,12 @@
 #import "ExtraView.h"
 #import "ExtraLayout.h"
 #import "ExtraItemFactory.h"
+#import "M4BigHitAreaLabel.h"
 
 @interface ExtraView()
-@property (nonatomic) UILabel *timeLabel;
+@property (nonatomic) M4BigHitAreaLabel *timeLabel;
 @property (nonatomic) UILabel *siteLabel;
-@property (nonatomic) UILabel *rightTimeLabel;
+@property (nonatomic) M4BigHitAreaLabel *rightTimeLabel;
 @property (nonatomic) UILabel *rightSiteLabel;
 @property (nonatomic) ExtraLayout *layout;
 @end
@@ -54,12 +55,26 @@
     return self.layout.height;
 }
 
+#pragma mark - Event
+- (void)onTapTime {
+    NSLog(@"【chenms】  %s", __func__);
+}
+
+- (void)onTapRightTime {
+    NSLog(@"【chenms】  %s", __func__);
+}
+
 #pragma mark - Getter
 - (UILabel *)timeLabel{
     if(!_timeLabel){
-        _timeLabel = [[UILabel alloc] init];
+        _timeLabel = [[M4BigHitAreaLabel alloc] init];
+        _timeLabel.hitInset = UIEdgeInsetsMake(-20, -20, -20, -20);
         _timeLabel.backgroundColor = [UIColor grayColor];
         _timeLabel.font = [ExtraItemFactory timeFont];
+        
+        _timeLabel.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapTime)];
+        [_timeLabel addGestureRecognizer:tap];
     }
     return _timeLabel;
 }
@@ -75,9 +90,13 @@
 
 - (UILabel *)rightTimeLabel{
     if(!_rightTimeLabel){
-        _rightTimeLabel = [[UILabel alloc] init];
+        _rightTimeLabel = [[M4BigHitAreaLabel alloc] init];
         _rightTimeLabel.backgroundColor = [UIColor grayColor];
         _rightTimeLabel.font = [ExtraItemFactory timeFont];
+        
+        _rightTimeLabel.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTapRightTime)];
+        [_rightTimeLabel addGestureRecognizer:tap];
     }
     return _rightTimeLabel;
 }

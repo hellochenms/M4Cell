@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "Info.h"
+#import "M4BigHitAreaView.h"
 
-@interface ExtraView : UIView
+@interface ExtraView : M4BigHitAreaView
 - (CGFloat)config:(Info *)info
      limitedWidth:(CGFloat)limitedWidth
          yPadding:(CGFloat *)yPadding;

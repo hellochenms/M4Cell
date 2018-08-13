@@ -12,6 +12,8 @@
 		9971FED2212137F5008BD099 /* ExtraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9971FECF212137F5008BD099 /* ExtraView.m */; };
 		9971FED92121381E008BD099 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 9971FED72121381E008BD099 /* Info.m */; };
 		9971FEDC21215E40008BD099 /* ExtraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9971FEDB21215E40008BD099 /* ExtraLayout.m */; };
+		9971FEE321217E03008BD099 /* M4BigHitAreaLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9971FEE121217E03008BD099 /* M4BigHitAreaLabel.m */; };
+		9971FEE621218018008BD099 /* M4BigHitAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9971FEE521218018008BD099 /* M4BigHitAreaView.m */; };
 		99952B5A211EDD6E00E3DD30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99952B59211EDD6E00E3DD30 /* AppDelegate.m */; };
 		99952B5D211EDD6E00E3DD30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99952B5C211EDD6E00E3DD30 /* ViewController.m */; };
 		99952B60211EDD6E00E3DD30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99952B5E211EDD6E00E3DD30 /* Main.storyboard */; };
@@ -50,6 +52,10 @@
 		9971FED82121381E008BD099 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		9971FEDA21215E40008BD099 /* ExtraLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtraLayout.h; sourceTree = "<group>"; };
 		9971FEDB21215E40008BD099 /* ExtraLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtraLayout.m; sourceTree = "<group>"; };
+		9971FEE121217E03008BD099 /* M4BigHitAreaLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M4BigHitAreaLabel.m; sourceTree = "<group>"; };
+		9971FEE221217E03008BD099 /* M4BigHitAreaLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M4BigHitAreaLabel.h; sourceTree = "<group>"; };
+		9971FEE421218018008BD099 /* M4BigHitAreaView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M4BigHitAreaView.h; sourceTree = "<group>"; };
+		9971FEE521218018008BD099 /* M4BigHitAreaView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M4BigHitAreaView.m; sourceTree = "<group>"; };
 		99952B55211EDD6E00E3DD30 /* M4Cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M4Cell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99952B58211EDD6E00E3DD30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99952B59211EDD6E00E3DD30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				9971FEC9212137E8008BD099 /* extra */,
+				9971FEE021217E03008BD099 /* hit */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -131,6 +138,17 @@
 				9971FED72121381E008BD099 /* Info.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9971FEE021217E03008BD099 /* hit */ = {
+			isa = PBXGroup;
+			children = (
+				9971FEE421218018008BD099 /* M4BigHitAreaView.h */,
+				9971FEE521218018008BD099 /* M4BigHitAreaView.m */,
+				9971FEE221217E03008BD099 /* M4BigHitAreaLabel.h */,
+				9971FEE121217E03008BD099 /* M4BigHitAreaLabel.m */,
+			);
+			path = hit;
 			sourceTree = "<group>";
 		};
 		99952B4C211EDD6E00E3DD30 = {
@@ -334,6 +352,8 @@
 				99952B5D211EDD6E00E3DD30 /* ViewController.m in Sources */,
 				9971FEDC21215E40008BD099 /* ExtraLayout.m in Sources */,
 				9971FED92121381E008BD099 /* Info.m in Sources */,
+				9971FEE321217E03008BD099 /* M4BigHitAreaLabel.m in Sources */,
+				9971FEE621218018008BD099 /* M4BigHitAreaView.m in Sources */,
 				99952B68211EDD6E00E3DD30 /* main.m in Sources */,
 				99952B5A211EDD6E00E3DD30 /* AppDelegate.m in Sources */,
 				9971FED1212137F5008BD099 /* ExtraItemFactory.m in Sources */,

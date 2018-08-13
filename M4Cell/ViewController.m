@@ -25,6 +25,7 @@
     self.someView.frame = CGRectMake(100, 100, 100, 100);
     
     self.extraView = [ExtraView new];
+    self.extraView.hitInset = UIEdgeInsetsMake(-20, -20, -20, -20);
     [self.view addSubview:self.extraView];
     
     [self.view bringSubviewToFront:self.someView];
